@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInversionPrincipl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrincipleExample", "SingleResponsibilityPrincipleExample\SingleResponsibilityPrincipleExample.csproj", "{FAF8F339-C301-46B8-973A-2A959C6AB5C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosedPrincipleExample", "OpenClosedPrincipleExample\OpenClosedPrincipleExample.csproj", "{A209890A-A4F5-423A-BFC9-26208208FEA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FAF8F339-C301-46B8-973A-2A959C6AB5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF8F339-C301-46B8-973A-2A959C6AB5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAF8F339-C301-46B8-973A-2A959C6AB5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A209890A-A4F5-423A-BFC9-26208208FEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A209890A-A4F5-423A-BFC9-26208208FEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A209890A-A4F5-423A-BFC9-26208208FEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A209890A-A4F5-423A-BFC9-26208208FEA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

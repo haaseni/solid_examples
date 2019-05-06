@@ -15,6 +15,7 @@ namespace LiskovSubstitutionPrincipleExample
             // to the same value
             var square = new Square();
             square.SetHeight(10);
+            Console.WriteLine("\nSet square height to 10");
             Console.WriteLine("Square");
             PrintRectangle(square);
             
@@ -22,10 +23,14 @@ namespace LiskovSubstitutionPrincipleExample
             // setting a different height and width should work. We are
             // substituting a rectangle for a square.
             var rectangle = (Rectangle)square;
+            rectangle.SetWidth(10);
             rectangle.SetHeight(20);
+            Console.WriteLine("\nSet rectangle width to 10");
+            Console.WriteLine("\nSet rectangle height to 20");
             Console.WriteLine("\nSquare Back To Rectangle");
             PrintRectangle(rectangle);
-            
+            Console.WriteLine("\nSee, we can't set a different height from the width because we are violating the Liskov Substitution Principle!");
+
             Console.ReadKey();
         }
 

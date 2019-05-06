@@ -2,26 +2,35 @@
 {
     public class Rectangle : Shape
     {
-        public double Width { get; protected set; }
+        protected double _width;
+        protected double _height;
+        
+        public double Width
+        {
+           get { return _width; } 
+        }
 
-        public double Height { get; protected set; }
+        public double Height
+        {
+            get { return _height; }
+        }
 
         public Rectangle()
         {}
 
-        public void SetWidth(double width)
+        public virtual void SetWidth(double width)
         {
-            Width = width;
+            _width = width;
         }
 
-        public void SetHeight(double height)
+        public virtual void SetHeight(double height)
         {
-            Height = height;
+            _height = height;
         }
 
         public override double Area()
         {
-            return Width * Height;
+            return _width * _height;
         }
     }
 }

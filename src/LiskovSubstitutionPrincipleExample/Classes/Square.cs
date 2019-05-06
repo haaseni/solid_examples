@@ -3,20 +3,18 @@
     public class Square : Rectangle
     {
         public Square()
+        { }
+
+        public override void SetWidth(double width)
         {
-            Height = Width;
+            _width = width;
+            _height = width;
         }
 
-        public new void SetWidth(double width)
+        public override void SetHeight(double height)
         {
-            base.SetWidth(width);
-            base.SetHeight(width);
-        }
-
-        public new void SetHeight(double height)
-        {
-            base.SetHeight(height);
-            base.SetWidth(height);
+            _width = height;
+            _height = height;
         }
     }
 }
